@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		04F1CA191C137CF1000A52B0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 04F1CA181C137CF1000A52B0 /* LICENSE */; };
+		1524FC08247E4DF5007F1AEF /* FLEXDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1524FC06247E4DF4007F1AEF /* FLEXDylib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1524FC0E247E4E16007F1AEF /* FLEX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4C941F1B5B20570088C3F2 /* FLEX.framework */; };
+		1524FC10247E4E62007F1AEF /* FLEXDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 1524FC0F247E4E62007F1AEF /* FLEXDylib.m */; };
+		1524FC19247E571E007F1AEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1524FC18247E571E007F1AEF /* AppDelegate.m */; };
+		1524FC1C247E571E007F1AEF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1524FC1B247E571E007F1AEF /* SceneDelegate.m */; };
+		1524FC1F247E571E007F1AEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1524FC1E247E571E007F1AEF /* ViewController.m */; };
+		1524FC22247E571E007F1AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1524FC20247E571E007F1AEF /* Main.storyboard */; };
+		1524FC24247E5720007F1AEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1524FC23247E5720007F1AEF /* Assets.xcassets */; };
+		1524FC27247E5720007F1AEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1524FC25247E5720007F1AEF /* LaunchScreen.storyboard */; };
+		1524FC2A247E5720007F1AEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1524FC29247E5720007F1AEF /* main.m */; };
+		1524FC31247E5AFF007F1AEF /* FLEXDylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1524FC04247E4DF4007F1AEF /* FLEXDylib.framework */; };
+		1524FC32247E5AFF007F1AEF /* FLEXDylib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1524FC04247E4DF4007F1AEF /* FLEXDylib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C27A8B91F0E5A0400F0D02D /* FLEXTestsMethodsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C27A8B81F0E5A0400F0D02D /* FLEXTestsMethodsList.m */; };
 		1C27A8BB1F0E5A0400F0D02D /* FLEX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4C941F1B5B20570088C3F2 /* FLEX.framework */; };
 		222C88221C7339DC007CA15F /* FLEXRealmDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 222C88211C7339DC007CA15F /* FLEXRealmDefines.h */; };
@@ -351,6 +363,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1524FC0C247E4E10007F1AEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A4C94161B5B20570088C3F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A4C941E1B5B20570088C3F2;
+			remoteInfo = FLEX;
+		};
+		1524FC2E247E5745007F1AEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A4C94161B5B20570088C3F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1524FC03247E4DF4007F1AEF;
+			remoteInfo = FLEXDylib;
+		};
 		1C27A8BC1F0E5A0400F0D02D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A4C94161B5B20570088C3F2 /* Project object */;
@@ -360,8 +386,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1524FC33247E5AFF007F1AEF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1524FC32247E5AFF007F1AEF /* FLEXDylib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		04F1CA181C137CF1000A52B0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1524FC04247E4DF4007F1AEF /* FLEXDylib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLEXDylib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1524FC06247E4DF4007F1AEF /* FLEXDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLEXDylib.h; sourceTree = "<group>"; };
+		1524FC07247E4DF5007F1AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1524FC0F247E4E62007F1AEF /* FLEXDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLEXDylib.m; sourceTree = "<group>"; };
+		1524FC15247E571E007F1AEF /* FLEXLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLEXLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1524FC17247E571E007F1AEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1524FC18247E571E007F1AEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1524FC1A247E571E007F1AEF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		1524FC1B247E571E007F1AEF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		1524FC1D247E571E007F1AEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1524FC1E247E571E007F1AEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1524FC21247E571E007F1AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1524FC23247E5720007F1AEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1524FC26247E5720007F1AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1524FC28247E5720007F1AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1524FC29247E5720007F1AEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C27A8B61F0E5A0300F0D02D /* FLEXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLEXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C27A8B81F0E5A0400F0D02D /* FLEXTestsMethodsList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLEXTestsMethodsList.m; sourceTree = "<group>"; };
 		1C27A8BA1F0E5A0400F0D02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -711,6 +767,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1524FC01247E4DF4007F1AEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1524FC0E247E4E16007F1AEF /* FLEX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1524FC12247E571E007F1AEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1524FC31247E5AFF007F1AEF /* FLEXDylib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1C27A8B31F0E5A0300F0D02D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -731,6 +803,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1524FC05247E4DF4007F1AEF /* FLEXDylib */ = {
+			isa = PBXGroup;
+			children = (
+				1524FC06247E4DF4007F1AEF /* FLEXDylib.h */,
+				1524FC0F247E4E62007F1AEF /* FLEXDylib.m */,
+				1524FC07247E4DF5007F1AEF /* Info.plist */,
+			);
+			path = FLEXDylib;
+			sourceTree = "<group>";
+		};
+		1524FC16247E571E007F1AEF /* FLEXLoader */ = {
+			isa = PBXGroup;
+			children = (
+				1524FC17247E571E007F1AEF /* AppDelegate.h */,
+				1524FC18247E571E007F1AEF /* AppDelegate.m */,
+				1524FC1A247E571E007F1AEF /* SceneDelegate.h */,
+				1524FC1B247E571E007F1AEF /* SceneDelegate.m */,
+				1524FC1D247E571E007F1AEF /* ViewController.h */,
+				1524FC1E247E571E007F1AEF /* ViewController.m */,
+				1524FC20247E571E007F1AEF /* Main.storyboard */,
+				1524FC23247E5720007F1AEF /* Assets.xcassets */,
+				1524FC25247E5720007F1AEF /* LaunchScreen.storyboard */,
+				1524FC28247E5720007F1AEF /* Info.plist */,
+				1524FC29247E5720007F1AEF /* main.m */,
+			);
+			path = FLEXLoader;
+			sourceTree = "<group>";
+		};
 		1C27A8B71F0E5A0400F0D02D /* FLEXTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -747,6 +847,8 @@
 			children = (
 				3A4C94211B5B20570088C3F2 /* FLEX */,
 				1C27A8B71F0E5A0400F0D02D /* FLEXTests */,
+				1524FC05247E4DF4007F1AEF /* FLEXDylib */,
+				1524FC16247E571E007F1AEF /* FLEXLoader */,
 				3A4C95451B5B216C0088C3F2 /* Frameworks */,
 				3A4C94201B5B20570088C3F2 /* Products */,
 			);
@@ -757,6 +859,8 @@
 			children = (
 				3A4C941F1B5B20570088C3F2 /* FLEX.framework */,
 				1C27A8B61F0E5A0300F0D02D /* FLEXTests.xctest */,
+				1524FC04247E4DF4007F1AEF /* FLEXDylib.framework */,
+				1524FC15247E571E007F1AEF /* FLEXLoader.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1416,6 +1520,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1524FBFF247E4DF4007F1AEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1524FC08247E4DF5007F1AEF /* FLEXDylib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A4C941C1B5B20570088C3F2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1598,6 +1710,44 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1524FC03247E4DF4007F1AEF /* FLEXDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1524FC0B247E4DF5007F1AEF /* Build configuration list for PBXNativeTarget "FLEXDylib" */;
+			buildPhases = (
+				1524FBFF247E4DF4007F1AEF /* Headers */,
+				1524FC00247E4DF4007F1AEF /* Sources */,
+				1524FC01247E4DF4007F1AEF /* Frameworks */,
+				1524FC02247E4DF4007F1AEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1524FC0D247E4E10007F1AEF /* PBXTargetDependency */,
+			);
+			name = FLEXDylib;
+			productName = FLEXDylib;
+			productReference = 1524FC04247E4DF4007F1AEF /* FLEXDylib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1524FC14247E571E007F1AEF /* FLEXLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1524FC2B247E5720007F1AEF /* Build configuration list for PBXNativeTarget "FLEXLoader" */;
+			buildPhases = (
+				1524FC11247E571E007F1AEF /* Sources */,
+				1524FC12247E571E007F1AEF /* Frameworks */,
+				1524FC13247E571E007F1AEF /* Resources */,
+				1524FC33247E5AFF007F1AEF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1524FC2F247E5745007F1AEF /* PBXTargetDependency */,
+			);
+			name = FLEXLoader;
+			productName = FLEXLoader;
+			productReference = 1524FC15247E571E007F1AEF /* FLEXLoader.app */;
+			productType = "com.apple.product-type.application";
+		};
 		1C27A8B51F0E5A0300F0D02D /* FLEXTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C27A8C01F0E5A0400F0D02D /* Build configuration list for PBXNativeTarget "FLEXTests" */;
@@ -1644,6 +1794,16 @@
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = Flipboard;
 				TargetAttributes = {
+					1524FC03247E4DF4007F1AEF = {
+						CreatedOnToolsVersion = 11.5;
+						DevelopmentTeam = BHSXZMPSGB;
+						ProvisioningStyle = Automatic;
+					};
+					1524FC14247E571E007F1AEF = {
+						CreatedOnToolsVersion = 11.5;
+						DevelopmentTeam = BHSXZMPSGB;
+						ProvisioningStyle = Automatic;
+					};
 					1C27A8B51F0E5A0300F0D02D = {
 						DevelopmentTeam = U3LST7M92S;
 					};
@@ -1669,11 +1829,30 @@
 			targets = (
 				3A4C941E1B5B20570088C3F2 /* FLEX */,
 				1C27A8B51F0E5A0300F0D02D /* FLEXTests */,
+				1524FC03247E4DF4007F1AEF /* FLEXDylib */,
+				1524FC14247E571E007F1AEF /* FLEXLoader */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1524FC02247E4DF4007F1AEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1524FC13247E571E007F1AEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1524FC27247E5720007F1AEF /* LaunchScreen.storyboard in Resources */,
+				1524FC24247E5720007F1AEF /* Assets.xcassets in Resources */,
+				1524FC22247E571E007F1AEF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1C27A8B41F0E5A0300F0D02D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1692,6 +1871,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1524FC00247E4DF4007F1AEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1524FC10247E4E62007F1AEF /* FLEXDylib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1524FC11247E571E007F1AEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1524FC1F247E571E007F1AEF /* ViewController.m in Sources */,
+				1524FC19247E571E007F1AEF /* AppDelegate.m in Sources */,
+				1524FC2A247E5720007F1AEF /* main.m in Sources */,
+				1524FC1C247E571E007F1AEF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1C27A8B21F0E5A0300F0D02D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1874,6 +2072,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1524FC0D247E4E10007F1AEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A4C941E1B5B20570088C3F2 /* FLEX */;
+			targetProxy = 1524FC0C247E4E10007F1AEF /* PBXContainerItemProxy */;
+		};
+		1524FC2F247E5745007F1AEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1524FC03247E4DF4007F1AEF /* FLEXDylib */;
+			targetProxy = 1524FC2E247E5745007F1AEF /* PBXContainerItemProxy */;
+		};
 		1C27A8BD1F0E5A0400F0D02D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3A4C941E1B5B20570088C3F2 /* FLEX */;
@@ -1881,7 +2089,136 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		1524FC20247E571E007F1AEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1524FC21247E571E007F1AEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1524FC25247E5720007F1AEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1524FC26247E5720007F1AEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		1524FC09247E4DF5007F1AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BHSXZMPSGB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FLEXDylib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lvv.FLEXDylib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1524FC0A247E4DF5007F1AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BHSXZMPSGB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FLEXDylib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lvv.FLEXDylib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1524FC2C247E5720007F1AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BHSXZMPSGB;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FLEXLoader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.lvv.FLEXLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1524FC2D247E5720007F1AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BHSXZMPSGB;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = FLEXLoader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.lvv.FLEXLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1C27A8BE1F0E5A0400F0D02D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2050,6 +2387,7 @@
 				INSTALL_PATH = "@rpath";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flipboard.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2082,6 +2420,7 @@
 				INSTALL_PATH = "@rpath";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flipboard.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2094,6 +2433,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1524FC0B247E4DF5007F1AEF /* Build configuration list for PBXNativeTarget "FLEXDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1524FC09247E4DF5007F1AEF /* Debug */,
+				1524FC0A247E4DF5007F1AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1524FC2B247E5720007F1AEF /* Build configuration list for PBXNativeTarget "FLEXLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1524FC2C247E5720007F1AEF /* Debug */,
+				1524FC2D247E5720007F1AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1C27A8C01F0E5A0400F0D02D /* Build configuration list for PBXNativeTarget "FLEXTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
