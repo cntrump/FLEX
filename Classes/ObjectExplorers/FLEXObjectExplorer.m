@@ -90,10 +90,20 @@
             CGFloat h, s, l, r, g, b, a;
             [self.object getRed:&r green:&g blue:&b alpha:&a];
             [self.object getHue:&h saturation:&s brightness:&l alpha:nil];
+            unsigned int red, green, blue;
+            red = (unsigned int)round(0xff * r);
+            green = (unsigned int)round(0xff * g);
+            blue = (unsigned int)round(0xff * b);
 
             return [NSString stringWithFormat:
-                @"HSL: (%.3f, %.3f, %.3f)\nRGB: (%.3f, %.3f, %.3f)\nAlpha: %.3f",
-                h, s, l, r, g, b, a
+                @"HSL: (%.3f, %.3f, %.3f)\n"
+                @"RGB: (%.3f, %.3f, %.3f)\n"
+                @"HEX: #%02X%02X%02X (%u, %u, %u)\n"
+                @"Alpha: %.3f",
+                h, s, l,
+                r, g, b,
+                red, green, blue, red, green, blue,
+                a
             ];
         }
 
