@@ -124,7 +124,7 @@ NSAssert(!self._action, @"Cannot mutate action after retreiving underlying UIAle
 - (FLEXAlertStringProperty)message {
     return ^FLEXAlert *(NSString *message) {
         if (self._controller.message) {
-            self._controller.message = [self._controller.message stringByAppendingString:message];
+            self._controller.message = [self._controller.message stringByAppendingFormat:@"%@", message];
         } else {
             self._controller.message = message;
         }
